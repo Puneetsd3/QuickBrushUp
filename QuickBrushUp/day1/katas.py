@@ -22,3 +22,9 @@ def freq_manual(lst):
     for item in lst:
         freq[item] = freq.get(item, 0) + 1
     return freq
+
+print(chunk_list([1,2,3,4,5,6],2))
+print(flatten_one_level([[1,2],[1],4,[2]]))
+print(dict_get_with_callable({'x':1}, 'y', lambda: 42))
+print(freq_with_counter(['a','b','a']))
+print(freq_manual(['a','b','a']))
